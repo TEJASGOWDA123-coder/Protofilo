@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSelector from "./LanguageSelector";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -35,6 +36,7 @@ export default function Navbar() {
         </nav>
         
         <div className="flex items-center gap-3">
+          <LanguageSelector />
           <ThemeToggle />
           <a
             href="#projects"
